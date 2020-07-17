@@ -133,9 +133,7 @@ class Gan():
                         torchvision.utils.save_image(images.data[: n_row * n_row], model_path + '%d_.png'.format(epoch), normalize=True, range=(-1, 1), nrow=n_row)
             print("train finished")           
 
-if __name__=='__main__':
-    g=Gan()
-    g.train(g.args)
+
 
 
 
